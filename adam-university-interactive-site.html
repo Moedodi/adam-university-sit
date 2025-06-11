@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>آدم للخدمات الجامعية</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @keyframes fade-in {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      .animate-fade-in {
+        animation: fade-in 1s ease-out;
+      }
+
+      @keyframes slide-up {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      .animate-slide-up {
+        animation: slide-up 0.8s ease-out;
+      }
+    </style>
+  </head>
+  <body class="bg-white text-gray-900 font-sans">
+
+    <!-- Header -->
+    <header class="bg-white py-4 px-6 flex justify-between items-center shadow-md sticky top-0 z-50 transition-all duration-300">
+      <nav class="flex items-center space-x-6 rtl:space-x-reverse">
+        <a href="#about" class="hover:text-purple-600 transition duration-200">من نحن</a>
+        <a href="#services" class="hover:text-purple-600 transition duration-200">الخدمات</a>
+        <a href="#apply" class="hover:text-purple-600 transition duration-200">قدم الآن</a>
+        <a href="#contact" class="hover:text-purple-600 transition duration-200">تواصل معنا</a>
+      </nav>
+      <img src="Adam.png" alt="شعار آدم" class="h-20" />
+    </header>
+
+    <!-- Hero Section -->
+    <section class="text-center py-20 bg-gradient-to-b from-purple-100 to-purple-200 animate-fade-in">
+      <h2 class="text-4xl font-extrabold text-purple-700 mb-4">دليلك للدراسة في ألمانيا وبريطانيا</h2>
+      <p class="text-lg max-w-xl mx-auto text-gray-700">
+        استشارات، تقديمات جامعية، دعم تأشيرات، وخدمات ما بعد الوصول.
+      </p>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="px-6 py-12 bg-white animate-fade-in">
+      <h3 class="text-3xl text-purple-700 font-bold mb-4">من نحن؟</h3>
+      <p class="text-gray-700 max-w-3xl leading-relaxed">
+        نحن فريق مختص بمساعدة الطلاب العرب في التقديم إلى الجامعات الألمانية والبريطانية من خلال خدمات احترافية تشمل التقديم، تجهيز الوثائق، الاستشارات، ودعم فيزا السفر.
+      </p>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="px-6 py-12 bg-gray-50 animate-slide-up">
+      <h3 class="text-3xl text-purple-700 font-bold mb-6">خدماتنا</h3>
+      <ul class="space-y-3 text-gray-800 list-disc list-inside">
+        <li>استشارات دراسية مخصصة</li>
+        <li>تجهيز السيرة الذاتية ورسائل الدافع</li>
+        <li>تقديم إلى الجامعات الألمانية والبريطانية</li>
+        <li>الحصول على قبول جامعي</li>
+        <li>دعم إجراءات الفيزا</li>
+        <li>خدمات ما بعد الوصول</li>
+      </ul>
+    </section>
+
+    <!-- Image Section -->
+    <section class="px-6 py-12 bg-white animate-fade-in">
+      <h3 class="text-3xl text-purple-700 font-bold mb-6 text-center">الحياة والدراسة في ألمانيا</h3>
+      <div class="flex justify-center">
+        <img
+          src="https://cdn.pixabay.com/photo/2016/11/29/06/15/college-students-1867485_1280.jpg"
+          alt="طلاب في الجامعة"
+          class="w-full max-w-6xl h-[500px] object-cover rounded shadow-lg transform hover:scale-105 transition-transform duration-300"
+        />
+      </div>
+    </section>
+
+    <!-- Apply -->
+    <section id="apply" class="px-6 py-12 bg-gray-100 animate-slide-up">
+      <h3 class="text-3xl text-purple-700 font-bold mb-6">قدم الآن</h3>
+      <form class="space-y-4 max-w-xl mx-auto">
+        <input type="text" placeholder="الاسم الكامل" class="w-full p-2 rounded border border-gray-300 focus:ring-purple-500 focus:border-purple-500" />
+        <input type="email" placeholder="البريد الإلكتروني" class="w-full p-2 rounded border border-gray-300 focus:ring-purple-500 focus:border-purple-500" />
+        <input type="text" placeholder="الدولة" class="w-full p-2 rounded border border-gray-300 focus:ring-purple-500 focus:border-purple-500" />
+        <textarea placeholder="أخبرنا عن خطتك الدراسية" rows="4" class="w-full p-2 rounded border border-gray-300 focus:ring-purple-500 focus:border-purple-500"></textarea>
+        <button type="submit" class="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700 transition">إرسال الطلب</button>
+      </form>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="px-6 py-12 bg-white animate-fade-in">
+      <h3 class="text-3xl text-purple-700 font-bold mb-6">تواصل معنا</h3>
+      <p class="text-gray-700">📧 info@adam-universities.com</p>
+      <p class="text-gray-700">📱 +49 XXX XXX XXXX</p>
+      <p class="text-gray-700">📍 Kaiserslautern، ألمانيا</p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center text-sm text-gray-500 py-4 bg-gray-50 border-t border-gray-200">
+      © 2025 آدم للخدمات الجامعية. جميع الحقوق محفوظة.
+    </footer>
+  </body>
+</html>
